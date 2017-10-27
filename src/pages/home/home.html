@@ -5,13 +5,23 @@
 </ion-header>
 
 <ion-content padding>
-  <h2>Bem vindo</h2>
-  <p>
-    This starter project comes with simple tabs-based layout for apps
-    that are going to primarily use a Tabbed UI.
-  </p>
-  <p>
-    Take a look at the <code>src/pages/</code> directory to add or change tabs,
-    update any existing page or create new pages.
-  </p>
+
+  <ion-grid>
+    <ion-row>
+      <ion-col col-12>
+        <ion-item>
+          <ion-label color="primary" stacked>Login</ion-label>
+          <ion-input type="email" placeholder="Login"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label color="primary" stacked>Senha</ion-label>
+          <ion-input type="password" placeholder="Senha"></ion-input>
+        </ion-item>         
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <button ion-button color="light" col-6 offset-3>Entrar</button>
+    </ion-row>
+  </ion-grid>
+
 </ion-content>

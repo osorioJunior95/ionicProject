@@ -14,12 +14,17 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
   templateUrl: 'feed.html',
 })
 export class FeedPage {
+  public nomeUsuario: string = "Osório Junior";
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
+  public testeFuncao(): void{
+    alert('Olá mundo!');
+  }
+
   ionViewDidLoad() {
-    console.log('ionViewDidLoad FeedPage');
+    this.testeFuncao();
   }
 
 }
